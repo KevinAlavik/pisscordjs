@@ -35,6 +35,10 @@ bot.on('MESSAGE_CREATE', (message) => {
 
 bot.login();
 ```
+Now just run:
+```sh
+node .
+```
 Now  go back to discord and you should see your bot online! Now try to type:
 ```
 !ping
