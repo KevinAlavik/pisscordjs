@@ -160,9 +160,6 @@ class Pisscord {
     }
   }
   
-  }
-  
-
   async sendEmbed(channelId, embed) {
     const endpoint = `https://discord.com/api/v10/channels/${channelId}/messages`;
     const payload = {
