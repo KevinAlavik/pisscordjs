@@ -129,12 +129,15 @@ class Pisscord {
     const endpoint = `https://discord.com/api/v10/channels/${message.channel_id}/messages`;
     const payload = {
       content,
-      embeds: [embed],
       message_reference: {
         message_id: message.id,
         channel_id: message.channel_id,
       },
     };
+  
+    if (embed) {
+      payload.embeds = [embed];
+    }
   
     try {
       const response = await fetch(endpoint, {
@@ -155,6 +158,8 @@ class Pisscord {
     } catch (error) {
       console.error('Failed to send reply:', error);
     }
+  }
+  
   }
   
 
