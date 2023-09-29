@@ -1,7 +1,10 @@
 {
   "name": "pisscordjs",
-  "repository": "@pufferisadev/pisscordjs",
-  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KevinAlavik/pisscordjs.git"
+  },
+  "version": "0.1.4-release",
   "description": "Simple JavaScript library to build discord bots",
   "main": "src/pisscord.js",
   "scripts": {
