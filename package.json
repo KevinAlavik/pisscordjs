@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/KevinAlavik/pisscordjs.git"
   },
-  "version": "0.1.4",
+  "version": "0.1.4a",
   "description": "Simple JavaScript library to build discord bots",
   "main": "src/pisscord.js",
   "types": "src/pisscord.d.ts",
