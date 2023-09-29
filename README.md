@@ -62,7 +62,7 @@ const options = {
 (`interaction.data.options` lists all of the options the user has inputed + their value)
 
 # \<message return object>.reply()
-`message.reply(message)` is an easier way to run `client.replyMessage(messageObj, message)`
+`message.reply(message, embed)` is an easier way to run `client.replyMessage(messageObj, message)`
 
 This works with interactions to
 
