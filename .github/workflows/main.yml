@@ -1,0 +1,29 @@
+name: My Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Replace .npmrc Template
+        run: |
+          # Read the template .npmrc file
+          cat .npmrc.template > .npmrc
+
+          # Replace placeholders with secrets
+          sed -i 's/AUTH_TOKEN/${{ secrets.NPM_AUTH_TOKEN }}/g' .npmrc
+        working-directory: ${{ github.workspace }}
+
+      - name: Install Dependencies and Publish
+        run: |
+          npm install
+          npm publish
+        working-directory: ${{ github.workspace }}
