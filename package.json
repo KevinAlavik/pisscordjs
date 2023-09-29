@@ -1,5 +1,6 @@
 {
   "name": "pisscordjs",
+  "repository": "@pufferisadev/pisscordjs",
   "version": "0.1.4",
   "description": "Simple JavaScript library to build discord bots",
   "main": "src/pisscord.js",
