@@ -7,6 +7,7 @@
   "version": "0.1.4",
   "description": "Simple JavaScript library to build discord bots",
   "main": "src/pisscord.js",
+  "types": "src/pisscord.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
